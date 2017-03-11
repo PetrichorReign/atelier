@@ -24,6 +24,13 @@ alongside create-react-app.
   cd client
   npm install
   ```
+* Setup database
+
+```console
+    cd atelier
+    rails db:migrate db:seed
+```
+
 * Install Redis 
   * Redis version 3.0.4 used for development                          
 
