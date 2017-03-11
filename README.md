@@ -12,10 +12,10 @@ alongside create-react-app.
 
 * Install Node.js and npm 
   * Node.js versions 7.7.1 used for development
-  
-  ```console
-  brew install node   
-  ```
+
+    ```console
+    brew install node   
+    ```
 * Install dependencies
   
   ```console
@@ -26,40 +26,40 @@ alongside create-react-app.
   ```
 * Setup database
 
-```console
-cd atelier
-rails db:migrate db:seed
-```
+  ```console
+  cd atelier
+  rails db:migrate db:seed
+  ```
 
 * Install Redis 
   * Redis version 3.0.4 used for development                          
 
-  ```console
-  brew install redis
-  ```
+    ```console
+    brew install redis
+    ```
 
 * Run Atelier
   * Run redis server 
-  
-  ```console
-  redis-server /usr/local/etc/redis.conf
-  ```
+
+    ```console
+    redis-server /usr/local/etc/redis.conf
+    ```
   * Run project
   
-  ```console
-  cd atelier
-  bundle exec rake start
-  ```
-* Run test
+    ```console
+    cd atelier
+    bundle exec rake start
+    ```
+* Run tests
   * Run rails specs
   
-  ```console
-  cd atelier
-  rspec
-  ```
+    ```console
+    cd atelier
+    rspec
+    ```
   * Run javascript tests
  
-  ```console
-  cd atelier/client
-  npm test
-  ```
+    ```console
+    cd atelier/client
+    npm test
+    ```
