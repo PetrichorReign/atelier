@@ -1,0 +1,85 @@
+div.content-item {
+  width: 350px;
+  margin: 40px 10px 50px 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+div.content-item.is-streaming-true {
+  -moz-box-shadow: 0 0 25px green;
+  -webkit-box-shadow: 0 0 25px green;
+  box-shadow: 0 0 25px green;
+}
+
+div.content-item.is-streaming-false {
+  -moz-box-shadow: 0 0 25px red;
+  -webkit-box-shadow: 0 0 25px red;
+  box-shadow: 0 0 25px red;
+}
+
+div.content-item > img {
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+div.content-attribute {
+  color: #666;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+div.maturity-rating {
+  border: 1px solid grey;
+}
+
+div.maturity-rating span {
+  padding: 0 5px;
+}
+
+div.is-streaming-button {
+  padding: 10px 0;
+}
+
+div.is-streaming-button button {
+  background: none;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  min-width: 100%;
+  max-width: 100%;
+  color: white;
+  border: 1px solid white;
+  height: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

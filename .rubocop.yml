@@ -1,0 +1,18 @@
+# This is the configuration used to check the rubocop source code.
+
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+    - 'spec/*_helper.rb'
+    - 'tmp/**/*'
+    - 'db/schema.rb'
+    - 'config/**/*'
+    - 'Rakefile'
+  TargetRubyVersion: 2.2
+Documentation:
+  Enabled: false
+LineLength:
+  Max: 120
+BlockLength:
+  Max: 120
