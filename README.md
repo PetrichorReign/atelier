@@ -42,7 +42,7 @@ alongside create-react-app.
   ```console
     cd atelier
     bundle exec rake start
-  ``
+  ```
 * Run test
   * Run rails specs
   
