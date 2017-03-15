@@ -44,7 +44,7 @@ describe('<Content />', () => {
         });
 
         it('content data is set to an empty array', () => {
-          expect(node.state.data.length).toBe(0);
+          expect(node.state.data.length).toEqual(0);
         });
       });
 
@@ -75,7 +75,7 @@ describe('<Content />', () => {
         });
 
         it('content data data is set to the response array', () => {
-          expect(node.state.data).toBe(contentArray);
+          expect(node.state.data).toEqual(contentArray);
         });
       });
     });
@@ -93,7 +93,7 @@ describe('<Content />', () => {
       });
 
       it('content data is set to an empty array', () => {
-        expect(node.state.data.length).toBe(0);
+        expect(node.state.data.length).toEqual(0);
       });
     });
   });

@@ -20,7 +20,7 @@ describe('<ContentItem />', () => {
   });
 
   describe('updateIsStreaming', () => {
-    beforeEach(() => {
+    afterEach(() => {
       var component = TestUtils.renderIntoDocument(<ContentItem key={0} content={item}/>);
       var updateStreamButton = TestUtils.findRenderedDOMComponentWithClass(component, "button");
 
@@ -29,8 +29,8 @@ describe('<ContentItem />', () => {
 
     it('makes an ajax call to update content', () => {
       $.ajax = jest.genMockFunction().mockImplementation(function (request) {
-        expect(request.url).toBe('/api/content/1');
-        expect(request.data).toBe({is_streaming: false});
+        expect(request.url).toEqual('/api/content/1');
+        expect(request.data).toEqual({is_streaming: 'false'});
       });
     });
   });
